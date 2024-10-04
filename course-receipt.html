@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtraa OTP Verification</title>
+    <style>
+      @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaBold";
+    
+        src: url("./font/Helvetica-Bold.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaCondense";
+        src: url("./font/helvetica_condensed.ttf") format("truetype");
+      
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Helvetica";
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+      }
+
+      .fa {
+        padding: 1.25rem;
+        font-size: 0.9375rem;
+        width: 0.625rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 2.1875rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        color: #ffffff;
+        font-size: 18px;
+      }
+
+      .container {
+        width: 37.5rem;
+      
+        padding: 1rem; /* Add some padding */
+        margin: 0 1rem; 
+      }
+.icon-wrapper{
+  
+              display: flex;
+              gap: 3rem;
+              margin-top: 1.25rem;
+              margin-bottom: 1.75rem;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Each product will be placed in a column layout */
+    gap: 1.75rem; /* Space between each product */
+    /* margin: 20px; */
+    margin-top:6.3125rem;
+}
+
+.product {
+    display: flex;
+    align-items: center; /* Vertically align image, description, and price */
+    gap: 32px; /* Space between the image and the details */
+}
+
+.product-image {
+    width: 6.5rem; /* Set width for the image */
+    height: 5.75rem; /* Maintain aspect ratio */
+}
+
+.details {
+    display: flex;
+    justify-content: space-between; /* Ensure price stays on the right side */
+    align-items: center;
+    width: 100%; /* Full width for the description and price container */
+}
+
+.description {
+    font-size: 16px;
+    flex-grow: 1; /* Allow description to take up remaining space */
+    max-width: 80%; /* Set a max width for the description */
+    white-space: nowrap; /* Prevent text wrapping to keep description in one line */
+    /* Hide overflow if the text is too long */
+    /* Add ellipsis to show the text is cut off */
+}
+
+.price {
+    font-size: 1.125rem;
+
+  
+    white-space: nowrap; /* Prevent price from moving */
+    margin-left: auto; /* Push price to the far right */
+}
+
+
+
+
+@media (max-width: 768px) {
+ 
+html{
+    scale:0.8;
+    margin-top:-12.5rem;
+    margin-bottom:-12.5rem;
+
+}
+    
+}
+@media (max-width: 515px) {
+html{
+    scale:0.6;
+    margin-top:-24rem;
+    margin-bottom:-24rem;
+
+
+}
+    
+}
+@media (max-width: 390px) {
+html{
+    scale:0.4;
+    margin-top:-34rem;
+    margin-bottom:-34rem;
+
+
+
+}
+    
+}
+
+      /* Additional styling for other elements */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="display: flex; justify-content: center">
+      <div class="container">
+        <div style="margin: 0; text-align: center; margin-top: 1.7331rem">
+          <img
+            src="./images/logo.svg"
+            style="max-width: 100%; height: auto; min-width: 150px"
+          />
+        </div>
+
+        <h2
+          style="
+            padding: 0.75rem 1.5rem;
+            background-color: #292929;
+            border-radius: 6.1875rem;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+          "
+        >
+          Welcome to Edtraa
+        </h2>
+
+        <h1
+          style="
+            margin-top: 5rem;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.75rem;
+            font-family:HelveticaBold;
+          "
+        >
+          FROM THE TOP 1%
+        </h1>
+
+        <!-- <p style="margin-top: 3.75rem">Hi, devendra</p> -->
+        <!-- <p style="margin-top: 1.25rem">
+          To complete your account setup or secure action, please use the
+          following One-Time Password(OTP) for verification.
+        </p> -->
+
+        <p style="margin-top: .75rem; font-size:2.5rem;font-family:HelveticaCondense;">
+            You are all set with your purchase
+          </p>
+        <p style="margin-top: .75rem;font-size:1.125rem">
+            Purchased by : Devendra Chapagain
+        </p>
+        <p style="margin-top: .75rem;font-size:1.125rem">
+            Transaction Date : 2024/09/15
+        </p>
+        <p style="margin-top: .75rem;font-size:1.125rem">
+            Transaction Number : ED - 1233858756875
+        </p>
+        <p style="margin-top: .75rem;font-size:1.125rem">
+            Payment method : E-sewa
+        </p>
+
+
+        <!-- <p style="margin-top: 0.25rem; color: #707070">
+          If you didn't request this OTP, please ignore this email or contact
+          support
+        </p> -->
+        <div class="flex-container">
+            <div class="product">
+                <img src="./images/sisanbaniya.svg" alt="Product 1" class="product-image">
+                <div class="details">
+                    <div class="internalDetails">
+                    <p class="description"style="font-family:HelveticaBold" ;>GSAP Crash Course</p>
+                    <p class="bottomDescription" >By vivek neupane</p>
+                </div>
+                <div class="internalDetails">"
+                    <p class="price">Price</p>
+                    <p class="price">RS.24000</p>
+                </div>
+                    
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/sisanbaniya.svg" alt="Product 2" class="product-image">
+                <div class="details">
+                    <div class="internalDetails">
+                    <p class="description"style="font-family:HelveticaBold" >CSS Crash Course</p>
+                    <p class="bottomDescription" >By shyam neupane</p>
+
+                </div>
+                </div>
+                <div class="internalDetails">
+                    <p class="price">Price</p>
+                    <p class="price"style="font-family:HelveticaBold" >Rs.24000</p>
+                </div>
+            </div>
+            <div class="product">
+                <img src="./images/sisanbaniya.svg" alt="Product 3" class="product-image">
+                <div class="details">
+                    <div class="internalDetails">
+                        <p class="description"style="font-family:HelveticaBold" >CSS Crash Course</p>
+                        <p class="bottomDescription" >By shyam neupane</p>
+    
+                    </div>
+                    <div class="internalDetails">
+                        <p class="price">Price</p>
+                     
+                        <p class="price"style="font-family:HelveticaBold" >Rs.24000</p>
+                    </div>
+                </div>
+            </div>
+            <div class="product"style="gap: 0;">
+                <img src="./images/sale-04.svg" alt="Product 3" style="height:24; width:24;font-size: 1rem;">
+                <div class="details">
+                    <p class="description"style="color:#707070;margin-left:0.75rem ">Promo code applied  </p>
+                   <p class="price"style="font-family:HelveticaBold" >Rs.10000</p>
+                </div>
+            </div>
+            <img src="./images/Vector 8.svg" alt="line"style="margin-top:1rem">
+            <div class="product">
+             
+                <div class="details">
+                    <p class="price"style="margin-top: 16px !important;" >Total:<span >4000</span></p>
+           
+                </div>
+            </div>
+        </div>
+        <button
+        style="
+          background-color: #7e1fff;
+          color: rgb(255, 255, 255);
+          width: 159px;
+          height: 2.75rem;
+          border: none;
+          border-radius: 0.5rem;
+          font-size: 1rem;
+          cursor: pointer;
+          margin-top: 3.75rem ;
+          font-weight: bold;
+          display:block;
+          margin: 0 auto;
+          
+        "
+      >
+       Start learning
+      </button>
+
+        <p style="margin-top: 7.5rem">need Assistance?</p>
+        <p style="margin-top: 1.25rem">
+          Feel free to contact us at edtraainfo@gmail.com or call 975656565 if
+          you have any questions or need further help.
+        </p>
+
+        <!-- Footer Section -->
+        <div
+          style="
+            color: white;
+            text-align: center;
+            margin-top: 3.875rem;
+            height: 8.875rem;
+            border-radius: 0.625rem;
+            border: 0.125rem solid #6f51f5;
+            background-color: #6f51f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        
+          "
+        >
+          <p
+            style="
+              margin-top: 1.5rem;
+              margin-bottom: 1.5rem;
+              font-weight: bold;
+              font-size: 1.75rem;
+            "
+          >
+            Follow Us
+          </p>
+          <!-- <div
+            style="
+              display: flex;
+              gap: 3rem;
+              margin-top: 1.25rem;
+              margin-bottom: 1.75rem;
+            " -->
+          
+            <div class="icon-wrapper"
+           
+          >
+              <img
+                src="./images/SVG.svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(1).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(2).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(3).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(4).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(5).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+            </div>
+          </div>
+        <!-- </div> -->
+
+        <footer
+          style="
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            margin-top: 3.5rem;
+          "
+        >
+          <p style="color: #707070">
+            You are receiving this email because you signed up on edtraa.com
+          </p>
+          <p style="margin: 0; color: #707070">with this email address</p>
+          <p style="margin: 0; margin-top: 1.25rem; color: #707070;">
+            <span style="margin-right:1.25rem;">Support</span>
+            <span style="margin-right: 1.25rem;">|</span>
+            <span style="margin-right: 1.25rem;">Privacy</span>
+            <span style="margin-right: 1.25rem;">|</span>
+            <span style="margin-right: 1.25rem;">Terms</span>
+            <span style="margin-right: 1.25rem;">|</span>
+            <span>unsubscribe</span>
+        </p>
+        
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
