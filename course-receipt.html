@@ -31,10 +31,11 @@
       }
       body {
         font-family: "Helvetica";
-        background-color: #000000;
+        background-color: #141414;
         margin: 0;
         padding: 0;
         text-align: justify;
+       
       }
 
       .fa {
@@ -111,7 +112,14 @@
     white-space: nowrap; /* Prevent price from moving */
     margin-left: auto; /* Push price to the far right */
 }
-
+.blur-area {
+  backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+  background-color: rgba(20, 20, 20, 0.7); /* Optional: Add a semi-transparent background */
+  padding: 1rem;
+  border-radius: 8px;
+  background: linear-gradient(white, white);
+  position:absolute;
+}
 
 
 
@@ -174,7 +182,15 @@ html{
         >
           Welcome to Edtraa
         </h2>
+        <!-- <div style="position: relative; display: flex; align-items: center; justify-content: flex-end; width: 100%;">
+            <img src="./images/Ellipse 4.svg" alt="Blurred Image" style="width: 700px; height: 300px; position: absolute; z-index: -1; left: 30% ;top:10%; ">
+          </div> -->
 
+
+          <!-- <div style="position: absolute; width: 260px; height: 260px; left: 283px; background-color: #BBAACC; opacity: 0.1; border-radius: 50%; box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); filter: blur(3px); z-index: -1; left: 50% ;top:20%;"></div> -->
+          <div style="position: absolute; width: 260px; height: 260px; background-color: #BBAACC; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(44px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 55% ;top:20%;"></div>
+
+     
         <h1
           style="
             margin-top: 5rem;
@@ -182,11 +198,15 @@ html{
             font-size: 3rem;
             line-height: 3.75rem;
             font-family:HelveticaBold;
+            backdrop-filter: blur(10px);
           "
         >
           FROM THE TOP 1%
+          
         </h1>
-
+    
+        
+        
         <!-- <p style="margin-top: 3.75rem">Hi, devendra</p> -->
         <!-- <p style="margin-top: 1.25rem">
           To complete your account setup or secure action, please use the
@@ -216,12 +236,14 @@ html{
         </p> -->
         <div class="flex-container">
             <div class="product">
+
                 <img src="./images/sisanbaniya.svg" alt="Product 1" class="product-image">
                 <div class="details">
                     <div class="internalDetails">
                     <p class="description"style="font-family:HelveticaBold" ;>GSAP Crash Course</p>
                     <p class="bottomDescription" >By vivek neupane</p>
                 </div>
+                
                 <div class="internalDetails">"
                     <p class="price">Price</p>
                     <p class="price">RS.24000</p>
@@ -229,6 +251,8 @@ html{
                     
                 </div>
             </div>
+          <div style="position: absolute; width: 260px; height: 260px;  background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 60% ;"></div>
+
             <div class="product">
                 <img src="./images/sisanbaniya.svg" alt="Product 2" class="product-image">
                 <div class="details">
@@ -262,9 +286,13 @@ html{
                 <img src="./images/sale-04.svg" alt="Product 3" style="height:24; width:24;font-size: 1rem;">
                 <div class="details">
                     <p class="description"style="color:#707070;margin-left:0.75rem ">Promo code applied  </p>
+                    
                    <p class="price"style="font-family:HelveticaBold" >Rs.10000</p>
                 </div>
+          <div style="position: absolute; width: 260px; height: 260px;  background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 30% ;"></div>
+                
             </div>
+            
             <img src="./images/Vector 8.svg" alt="line"style="margin-top:1rem">
             <div class="product">
              
@@ -284,7 +312,7 @@ html{
           border-radius: 0.5rem;
           font-size: 1rem;
           cursor: pointer;
-          margin-top: 3.75rem ;
+          margin-top: 3.75rem;
           font-weight: bold;
           display:block;
           margin: 0 auto;
@@ -327,6 +355,7 @@ html{
           >
             Follow Us
           </p>
+
           <!-- <div
             style="
               display: flex;
@@ -363,12 +392,15 @@ html{
                 style="width: 2.375rem; height: 2.375rem"
               />
             </div>
+            
           </div>
+          <div style="position: absolute; width: 261px; height: 261px;  background-color: #FFB7C3; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: -1;left: 40% ;"></div>
+
         <!-- </div> -->
 
         <footer
           style="
-            background-color: #000000;
+          
             color: white;
             text-align: center;
             bottom: 0;
@@ -380,11 +412,12 @@ html{
             You are receiving this email because you signed up on edtraa.com
           </p>
           <p style="margin: 0; color: #707070">with this email address</p>
+
           <p style="margin: 0; margin-top: 1.25rem; color: #707070;">
             <span style="margin-right:1.25rem;">Support</span>
             <span style="margin-right: 1.25rem;">|</span>
             <span style="margin-right: 1.25rem;">Privacy</span>
-            <span style="margin-right: 1.25rem;">|</span>
+            <span style="margin-right: 1.25rem;">|</span>   
             <span style="margin-right: 1.25rem;">Terms</span>
             <span style="margin-right: 1.25rem;">|</span>
             <span>unsubscribe</span>
