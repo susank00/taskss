@@ -7,7 +7,7 @@
     />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Edtraa OTP Verification</title>
+    <title>Edtraa Course receipt</title>
     <style>
       @font-face {
         font-family: "Helvetica";
@@ -54,7 +54,7 @@
       h3,
       p {
         color: #ffffff;
-        font-size: 18px;
+        font-size: 1.125rem;
       }
 
       .container {
@@ -74,14 +74,14 @@
     display: flex;
     flex-direction: column; /* Each product will be placed in a column layout */
     gap: 1.75rem; /* Space between each product */
-    /* margin: 20px; */
+    /* margin: 1.25rem; */
     margin-top:6.3125rem;
 }
 
 .product {
     display: flex;
     align-items: center; /* Vertically align image, description, and price */
-    gap: 32px; /* Space between the image and the details */
+    gap: 2rem; /* Space between the image and the details */
 }
 
 .product-image {
@@ -97,7 +97,7 @@
 }
 
 .description {
-    font-size: 16px;
+    font-size: 1rem;
     flex-grow: 1; /* Allow description to take up remaining space */
     max-width: 80%; /* Set a max width for the description */
     white-space: nowrap; /* Prevent text wrapping to keep description in one line */
@@ -113,17 +113,17 @@
     margin-left: auto; /* Push price to the far right */
 }
 .blur-area {
-  backdrop-filter: blur(5px); /* Adjust the blur value as needed */
+  backdrop-filter: blur(.3125rem); /* Adjust the blur value as needed */
   background-color: rgba(20, 20, 20, 0.7); /* Optional: Add a semi-transparent background */
   padding: 1rem;
-  border-radius: 8px;
+  border-radius: .5rem;
   background: linear-gradient(white, white);
   position:absolute;
 }
 
 
 
-@media (max-width: 768px) {
+/* @media (max-width: 48rem) {
  
 html{
     scale:0.8;
@@ -133,7 +133,7 @@ html{
 }
     
 }
-@media (max-width: 515px) {
+@media (max-width: 32.1875rem) {
 html{
     scale:0.6;
     margin-top:-24rem;
@@ -143,7 +143,7 @@ html{
 }
     
 }
-@media (max-width: 390px) {
+@media (max-width: 24.375rem) {
 html{
     scale:0.4;
     margin-top:-34rem;
@@ -153,7 +153,48 @@ html{
 
 }
     
-}
+} */
+@media (max-width: 48rem) {
+ 
+ html{
+     scale:0.8;
+     margin-top:-12.5rem;
+     margin-bottom:-12.5rem;
+ 
+ 
+ }
+    
+ }
+ @media (max-width: 32.1875rem) {
+ html{
+     scale:0.6;
+     margin-top:-24rem;
+     margin-bottom:-24rem;
+ 
+ 
+ 
+ 
+ }
+    
+ }
+ @media (max-width: 24.375rem) {
+ html{
+     scale:0.4;
+     margin-top:-38rem;
+     margin-bottom:-38rem;
+
+ }
+    
+ }
+ @media (max-width: 24.3125rem) {
+ html{
+     scale:0.4;
+     margin-top:-35rem;
+     margin-bottom:-38rem;
+
+ }
+    
+ }
 
       /* Additional styling for other elements */
     </style>
@@ -183,14 +224,13 @@ html{
           Welcome to Edtraa
         </h2>
         <!-- <div style="position: relative; display: flex; align-items: center; justify-content: flex-end; width: 100%;">
-            <img src="./images/Ellipse 4.svg" alt="Blurred Image" style="width: 700px; height: 300px; position: absolute; z-index: -1; left: 30% ;top:10%; ">
+            <img src="./images/Ellipse 4.svg" alt="Blurred Image" style="width: 43.75rem; height: 18.75rem; position: absolute; z-index: -1; left: 30% ;top:10%; ">
           </div> -->
 
 
-          <!-- <div style="position: absolute; width: 260px; height: 260px; left: 283px; background-color: #BBAACC; opacity: 0.1; border-radius: 50%; box-shadow: 0px 4px 6px rgba(255, 255, 255, 0.1); filter: blur(3px); z-index: -1; left: 50% ;top:20%;"></div> -->
-          <div style="position: absolute; width: 260px; height: 260px; background-color: #BBAACC; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(44px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 55% ;top:20%;"></div>
 
-     
+          <div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #BBAACC; opacity: 0.4; border-radius: 50%; box-shadow: 0rem .25rem .375rem rgba(0, 0, 0, 0.1); filter: blur(2.75rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem .25rem .375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 45vw; top: 20vh;"></div>
+
         <h1
           style="
             margin-top: 5rem;
@@ -198,7 +238,7 @@ html{
             font-size: 3rem;
             line-height: 3.75rem;
             font-family:HelveticaBold;
-            backdrop-filter: blur(10px);
+            backdrop-filter: blur(.625rem);
           "
         >
           FROM THE TOP 1%
@@ -251,7 +291,7 @@ html{
                     
                 </div>
             </div>
-          <div style="position: absolute; width: 260px; height: 260px;  background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 60% ;"></div>
+          <div style="position: absolute; width: 16.25rem; height: 16.25rem;  background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0rem .25rem .375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem .25rem .375rem rgba(0, 0, 0, 0.1)); z-index: 0;left: 60vw ;"></div>
 
             <div class="product">
                 <img src="./images/sisanbaniya.svg" alt="Product 2" class="product-image">
@@ -289,15 +329,15 @@ html{
                     
                    <p class="price"style="font-family:HelveticaBold" >Rs.10000</p>
                 </div>
-          <div style="position: absolute; width: 260px; height: 260px;  background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: 0;left: 30% ;"></div>
-                
+          <div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 30vw;"></div>
+ 
             </div>
             
             <img src="./images/Vector 8.svg" alt="line"style="margin-top:1rem">
             <div class="product">
              
                 <div class="details">
-                    <p class="price"style="margin-top: 16px !important;" >Total:<span >4000</span></p>
+                    <p class="price"style="margin-top: 1rem !important;" >Total:<span >4000</span></p>
            
                 </div>
             </div>
@@ -306,7 +346,7 @@ html{
         style="
           background-color: #7e1fff;
           color: rgb(255, 255, 255);
-          width: 159px;
+          width: 9.9375rem;
           height: 2.75rem;
           border: none;
           border-radius: 0.5rem;
@@ -394,7 +434,7 @@ html{
             </div>
             
           </div>
-          <div style="position: absolute; width: 261px; height: 261px;  background-color: #FFB7C3; opacity: 0.4; border-radius: 50%; box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); filter: blur(64px) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.1)); z-index: -1;left: 40% ;"></div>
+          <div style="position: absolute; width: 16.3125rem; height: 16.3125rem; background-color: #FFB7C3; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: -1; left: 40vw;"></div>
 
         <!-- </div> -->
 
