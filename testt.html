@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtraa OTP Verification</title>
+    <style>
+      @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("truetype");
+        src: url("./font/Helvetica-Bold.ttf") format("truetype");
+
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      body {
+        font-family: "Helvetica";
+        background-color: #000000;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+      }
+
+      .fa {
+        padding: 1.25rem;
+        font-size: 0.9375rem;
+        width: 0.625rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 2.1875rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      p {
+        color: #ffffff;
+      }
+
+      .wrapper {
+        display: flex;
+        justify-content: center;
+      }
+
+      .container {
+        width: 37.5rem;
+      }
+
+      .otp-box {
+        width: 3.75rem;
+        height: 3.75rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        color: #ffffff;
+        background-color: #bbaacc80;
+        font-weight: bold;
+        border-radius: 0.125rem;
+      }
+
+      button {
+        background-color: #7e1fff;
+        color: rgb(255, 255, 255);
+        width: 5.8125rem;
+        height: 2.75rem;
+        border: none;
+        border-radius: 0.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        margin-top: 2.5rem;
+        font-weight: bold;
+      }
+
+      footer {
+        background-color: #000000;
+        color: white;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        margin-top: 56px;
+      }
+
+      /* Media Query for Mobile Devices */
+      @media (max-width: 768px) {
+        .container {
+          width: 100%;
+          padding: 1rem;
+        }
+
+        h1,
+        h2 {
+          font-size: 1.5rem;
+        }
+
+        .otp-box {
+          width: 2.5rem;
+          height: 2.5rem;
+          font-size: 1.2rem;
+        }
+
+        button {
+          width: 100%;
+          height: 2.5rem;
+          font-size: 0.9rem;
+        }
+
+        .fa {
+          font-size: 1rem;
+          width: 1rem;
+          padding: 0.5rem;
+          margin: 0 1rem;
+        }
+
+        p {
+          font-size: 0.9rem;
+          margin-top: 1rem;
+        }
+
+        img {
+          width: 1.5rem;
+          height: 1.5rem;
+        }
+
+        footer {
+          font-size: 0.8rem;
+        }
+
+        .wrapper {
+          flex-direction: column;
+          align-items: center;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <h1 style="margin: 0; text-align: center; color: rgb(3, 32, 200)">
+          <img src="./images/logo.svg" />
+        </h1>
+
+        <h2
+          style="
+            padding: 0.75rem 1.5rem;
+            background-color: #292929;
+            border-radius: 6.1875rem;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+          "
+        >
+          Welcome to Edtraa
+        </h2>
+
+        <h1
+          style="
+            margin-top: 5rem;
+            font-family: 'Helvetica', sans-serif;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.75rem;
+            color: #ffffff;
+          "
+        >
+          FROM THE TOP 1%
+        </h1>
+
+        <p style="margin-top: 3.75rem">Hi, devendra</p>
+
+        <p>
+          To complete your account setup or secure action, please use the
+          following <br />
+          One-Time Password(OTP) for verification.
+        </p>
+
+        <div
+          style="
+            margin-top: 2.5rem;
+            font-size: 1.5rem;
+            display: flex;
+            gap: 2.5rem;
+          "
+        >
+          <div class="otp-box">5</div>
+          <div class="otp-box">5</div>
+          <div class="otp-box">5</div>
+          <div class="otp-box">5</div>
+          <div class="otp-box">5</div>
+        </div>
+
+        <p style="margin-top: 2.5rem">
+          This code is valid for the next 10 minutes
+        </p>
+        <p>
+          If you didn't request this OTP, please ignore this email or contact
+          support
+        </p>
+
+        <button>Verify</button>
+
+        <p style="margin-top: 7.5rem">need Assistance?</p>
+        <p>
+          Feel free to contact us at edtraainfo@gmail.com or call 975656565 if
+          you have any questions or need further help.
+        </p>
+
+        <div
+          style="
+            color: white;
+            text-align: center;
+            margin-top: 3.875rem;
+            height: 8.875rem;
+            border-radius: 0.625rem;
+            border: 0.125rem solid #8800ff;
+            background-color: #6f51f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+        >
+          <p style="font-weight: bold; font-size: 1.75rem">Follow Us</p>
+          <div style="display: flex; gap: 3rem">
+            <div class="icon-wrapper">
+              <img
+                src="./images/SVG.svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(1).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(2).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(3).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(4).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(5).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+            </div>
+          </div>
+        </div>
+
+        <footer>
+          <p>
+            You are receiving this email because you signed up on edtraa.com
+          </p>
+          <p>with this email address</p>
+          <p style="margin-top: 20px">
+            Support | Privacy | Terms | unsubscribe
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
