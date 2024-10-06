@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtraa course enrollment</title>
+    <style>
+      @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaBold";
+   
+        src: url("./font/Helvetica-Bold.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaCondense";
+        src: url("./font/helvetica_condensed.ttf") format("truetype");
+     
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaNeue";
+        src: url("./font/HelveticaNeue-Condensed.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Helvetica";
+        background-color: #141414;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+       
+      }
+
+
+      .fa {
+        padding: 1.25rem;
+        font-size: 0.9375rem;
+        width: 0.625rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 2.1875rem;
+      }
+
+
+      h1,
+      h2,
+      h3,
+      ul,
+      p {
+        color: #ffffff;
+        font-size: 1.125rem;
+      }
+
+
+      .container {
+        width: 37.5rem;
+     
+        padding: 1rem; /* Add some padding */
+        margin: 0 1rem;
+      }
+.icon-wrapper{
+ 
+              display: flex;
+              gap: 3rem;
+              margin-top: 1.25rem;
+              margin-bottom: 1.75rem;
+}
+.flex-container {
+    display: flex;
+    flex-direction: column; /* Each product will be placed in a column layout */
+    gap: 1.75rem; /* Space between each product */
+    /* margin: ${1/16}rem; */
+    margin-top:6.3125rem;
+}
+
+
+.product {
+    display: flex;
+    align-items: center; /* Vertically align image, description, and price */
+    gap: 2rem; /* Space between the image and the details */
+}
+
+
+.product-image {
+    width: 6.5rem; /* Set width for the image */
+    height: 5.75rem; /* Maintain aspect ratio */
+}
+
+
+.details {
+    display: flex;
+    justify-content: space-between; /* Ensure price stays on the right side */
+    align-items: center;
+    width: 100%; /* Full width for the description and price container */
+}
+
+
+.description {
+    font-size: 1rem;
+    flex-grow: 1; /* Allow description to take up remaining space */
+    max-width: 80%; /* Set a max width for the description */
+    white-space: nowrap; /* Prevent text wrapping to keep description in one line */
+    /* Hide overflow if the text is too long */
+    /* Add ellipsis to show the text is cut off */
+}
+
+
+.price {
+    font-size: 1.125rem;
+
+
+ 
+    white-space: nowrap; /* Prevent price from moving */
+    margin-left: auto; /* Push price to the far right */
+}
+.blur-area {
+  backdrop-filter: blur(0.3125rem); /* Adjust the blur value as needed */
+  background-color: rgba(20, 20, 20, 0.7); /* Optional: Add a semi-transparent background */
+  padding: 1rem;
+  border-radius: 0.5rem;
+  background: linear-gradient(white, white);
+  position:absolute;
+}
+
+
+
+
+@media (max-width: 48rem) {
+ 
+html{
+    scale:0.8;
+    margin-top:-14.5rem;
+    margin-bottom:-12.5rem;
+
+
+}
+   
+}
+@media (max-width: 32.1875rem) {
+html{
+    scale:0.6;
+    margin-top:-29rem;
+    margin-bottom:-29rem;
+
+
+
+
+}
+   
+}
+@media (max-width: 24.375rem) {
+html{
+    scale:0.4;
+    margin-top:-45rem;
+    margin-bottom:-45rem;
+
+
+
+
+
+
+}
+   
+}
+
+
+      /* Additional styling for other elements */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="display: flex; justify-content: center">
+      <div class="container">
+        <div style="margin: 0; text-align: center; margin-top: 1.7331rem">
+          <img
+            src="./images/logo.svg"
+            style="max-width: 100%; height: auto; min-width: 9.375rem"
+          />
+        </div>
+
+
+        <h2
+          style="
+            padding: 0.75rem 1.5rem;
+            background-color: #292929;
+            border-radius: 6.1875rem;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+          "
+        >
+          Welcome to Edtraa
+        </h2>
+       
+<div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #BBAACC; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(2.75rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 55vw; top: 20vh;"></div>
+
+     
+        <h1
+          style="
+            margin-top: 5rem;
+            font-weight: 700;
+            font-size: 3rem;
+            line-height: 3.75rem;
+            font-family:HelveticaBold;
+            backdrop-filter: blur(0.625rem);
+          "
+        >
+          FROM THE TOP 1%
+         
+        </h1>
+    
+         <div style="display:flex;flex-direction: row; margin-top:6.75rem">
+          <img src="./images/mixed.svg" alt="img1"style="height:12.5rem;width:30.0625rem;"/>
+         </div>
+         <div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 60%;"></div>
+
+          <p style="margin-top:5.75rem;  ">
+           Hi,Devendra,
+          </p>
+          <p style="margin-top:1.25rem; line-height: 1.8; ">
+            We’re thrilled to have you on board and can’t wait to share exciting updates, expert tips, and exclusive content straight to your inbox.
+           </p>
+           <p>Here’s what you can expect as a valued subscriber:</p>
+           <ul style="line-height: 1.8;">
+             <li>Exclusive insights into different sectors</li>
+             <li>Special discounts and offers just for our subscribers</li>
+             <li>Early access to new features, launches, and events</li>
+             <li>Weekly inspiration to help you solve a problem or achieve a goal relevant to your audience</li>
+           </ul>
+           <button
+           style="
+             background-color: #7e1fff;
+             color: rgb(255, 255, 255);
+             width: 9.9375rem;
+             height: 2.75rem;
+             border: none;
+             border-radius: 0.5rem;
+             font-size: 1rem;
+             cursor: pointer;
+             margin-top: 2.5rem;
+             font-weight: bold;
+
+           "
+         >
+         Visit Website
+         </button>
+         <div style="text-align:center;margin-top:6.1875rem"  >
+          <div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 20%;"></div>
+
+           <p style=" font-size:2.6875rem; font-family:HelveticaNeue;margin: 0; ">
+            Get up to 10% off On
+          </p>
+          <p style="font-size:2.6875rem; font-family:HelveticaNeue;margin: 0;">
+           Your first purchase
+          </p>
+        </div>
+        <div style="display:flex;flex-direction: row; margin-top:2.5rem">
+          <img src="./images/Rectangle 64.svg" alt="img1"style="height:16.25rem;width:13.6875rem;"/>
+          <img src="./images/Rectangle 61.svg" alt="img2"style="height:16.25rem;width:13.6875rem;"/>
+          <img src="./images/Rectangle 65.svg" alt="img3"style="height:16.25rem;width:13.6875rem;"/>
+     
+
+         </div>
+         <p style="margin-top:2rem" >
+          As a thank-you for joining us, enjoy 10 % discount on your first purchase. Use code <b>WELCOME10</b> at checkout!
+         </p>
+         <button
+  style="
+  margin-top:2.5rem;
+    background-color: transparent;
+    color: #7E1FFF;
+    width: 9.9375rem;
+    height: 2.75rem;
+    border: .1875rem solid #7E1FFF; /* Border width, style, and color combined */
+    border-radius: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+    margin-top: 2.5rem;
+    font-weight: bold;
+  "
+>
+  Buy Course
+</button>
+          <div style="position: absolute; width: 16.25rem; height: 16.25rem; background-color: #EEEEEE; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 60%;"></div>
+
+          <!-- <img src="./images/nabilcard.svg" alt="nabil"style="border-radius:0.5rem;"/> -->
+        <p style="margin-top: 7.5rem">need Assistance?</p>
+        <p style="margin-top: 1.25rem ">
+          Feel free to contact us at edtraainfo@gmail.com or call 975656565 if
+          you have any questions or need further help.
+        </p>
+
+
+        <!-- Footer Section -->
+        <div
+          style="
+            color: white;
+            text-align: center;
+            margin-top: 3.875rem;
+            height: 8.875rem;
+            border-radius: 0.625rem;
+            border: 0.125rem solid #6f51f5;
+            background-color: #6f51f5;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+       
+          "
+        >
+          <p
+            style="
+              margin-top: 1.5rem;
+              margin-bottom: 1.5rem;
+              font-weight: bold;
+              font-size: 1.75rem;
+            "
+          >
+            Follow Us
+          </p>
+          
+          <div style="position: absolute; width: 16.3125rem; height: 16.3125rem; background-color: #FFB7C3; opacity: 0.4; border-radius: 50%; box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1); filter: blur(4rem) brightness(0.3) contrast(1) grayscale(0) hue-rotate(0deg) invert(0) saturate(1) sepia(0) drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1)); z-index: 0; left: 40%;"></div>
+
+       
+         
+            <div class="icon-wrapper"
+           
+          >
+              <img
+                src="./images/SVG.svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(1).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(2).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(3).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(4).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+              <img
+                src="./images/SVG(5).svg"
+                style="width: 2.375rem; height: 2.375rem"
+              />
+            </div>
+           
+          </div>
+
+
+        <!-- </div> -->
+
+
+        <footer
+          style="
+         
+            color: white;
+            text-align: center;
+            bottom: 0;
+            width: 100%;
+            margin-top: 3.5rem;
+          "
+        >
+          <p style="color: #707070">
+            You are receiving this email because you signed up on edtraa.com
+          </p>
+          <p style="margin: 0; color: #707070">with this email address</p>
+
+
+          <p style="margin: 0; margin-top: 1.25rem; color: #707070;">
+            <span style="margin-right:1.25rem;">Support</span>
+            <span style="margin-right: 1.25rem;">|</span>
+            <span style="margin-right: 1.25rem;">Privacy</span>
+            <span style="margin-right: 1.25rem;">|</span>  
+            <span style="margin-right: 1.25rem;">Terms</span>
+            <span style="margin-right: 1.25rem;">|</span>
+            <span>unsubscribe</span>
+        </p>
+       
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
+
+
+
