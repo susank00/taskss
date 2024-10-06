@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Edtraa course enrollment</title>
+    <style>
+      @font-face {
+        font-family: "Helvetica";
+        src: url("./font/Helvetica.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaBold";
+
+        src: url("./font/Helvetica-Bold.ttf") format("truetype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaCondense";
+        src: url("./font/helvetica_condensed.ttf") format("truetype");
+
+        font-weight: normal;
+        font-style: normal;
+      }
+      @font-face {
+        font-family: "HelveticaNeue";
+        src: url("./font/HelveticaNeue-Condensed.otf") format("opentype");
+        font-weight: normal;
+        font-style: normal;
+      }
+      body {
+        font-family: "Helvetica";
+        background-color: #141414;
+        margin: 0;
+        padding: 0;
+        text-align: justify;
+      }
+
+      .fa {
+        padding: 1.25rem;
+        font-size: 0.9375rem;
+        width: 0.625rem;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 50%;
+        background-color: white;
+        margin: 0 2.1875rem;
+      }
+
+      h1,
+      h2,
+      h3,
+      ul,
+      p {
+        color: #ffffff;
+        font-size: 1.125rem;
+      }
+
+      .container {
+        width: 37.5rem;
+
+        padding: 1rem; /* Add some padding */
+        margin: 0 1rem;
+      }
+      .icon-wrapper {
+        display: flex;
+        gap: 3rem;
+        margin-top: 1.25rem;
+        margin-bottom: 1.75rem;
+      }
+      .flex-container {
+        display: flex;
+        flex-direction: column; /* Each product will be placed in a column layout */
+        gap: 1.75rem; /* Space between each product */
+        /* margin: ${1/16}rem; */
+        margin-top: 6.3125rem;
+      }
+
+      .product {
+        display: flex;
+        align-items: center; /* Vertically align image, description, and price */
+        gap: 2rem; /* Space between the image and the details */
+      }
+
+      .product-image {
+        width: 6.5rem; /* Set width for the image */
+        height: 5.75rem; /* Maintain aspect ratio */
+      }
+
+      .details {
+        display: flex;
+        justify-content: space-between; /* Ensure price stays on the right side */
+        align-items: center;
+        width: 100%; /* Full width for the description and price container */
+      }
+
+      .description {
+        font-size: 1rem;
+        flex-grow: 1; /* Allow description to take up remaining space */
+        max-width: 80%; /* Set a max width for the description */
+        white-space: nowrap; /* Prevent text wrapping to keep description in one line */
+        /* Hide overflow if the text is too long */
+        /* Add ellipsis to show the text is cut off */
+      }
+
+      .price {
+        font-size: 1.125rem;
+
+        white-space: nowrap; /* Prevent price from moving */
+        margin-left: auto; /* Push price to the far right */
+      }
+      .blur-area {
+        backdrop-filter: blur(0.3125rem); /* Adjust the blur value as needed */
+        background-color: rgba(
+          20,
+          20,
+          20,
+          0.7
+        ); /* Optional: Add a semi-transparent background */
+        padding: 1rem;
+        border-radius: 0.5rem;
+        background: linear-gradient(white, white);
+        position: absolute;
+      }
+
+      @media (max-width: 48rem) {
+        html {
+          scale: 0.8;
+          margin-top: -10.5rem;
+          margin-bottom: -12.5rem;
+        }
+      }
+      @media (max-width: 32.1875rem) {
+        html {
+          scale: 0.6;
+          margin-top: -25rem;
+          margin-bottom: -29rem;
+        }
+      }
+      @media (max-width: 29.375rem) {
+        html {
+          scale: 0.5;
+          margin-top: -35rem;
+          margin-bottom: -45rem;
+        }
+      }
+      @media (max-width: 24.375rem) {
+        html {
+          scale: 0.5;
+          margin-top: -45rem;
+          margin-bottom: -45rem;
+        }
+      }
+
+      /* Additional styling for other elements */
+    </style>
+  </head>
+  <body>
+    <div class="wrapper" style="display: flex; justify-content: center">
+      <div class="container">
+        <div style="margin: 0; text-align: center; margin-top: 1.7331rem">
+          <img
+            src="./images/logo.svg"
+            style="max-width: 100%; height: auto; min-width: 9.375rem"
+          />
+        </div>
+
+        <h2
+          style="
+            padding: 0.75rem 1.5rem;
+            background-color: #292929;
+            border-radius: 6.1875rem;
+            display: block;
+            margin: 0 auto;
+            width: fit-content;
+            box-shadow: 0 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            margin-top: 2rem;
+          "
+        >
+          Welcome to Edtraa
+        </h2>
+
+        <div
+          style="
+            position: absolute;
+            width: 16.25rem;
+            height: 16.25rem;
+            background-color: #bbaacc;
+            opacity: 0.4;
+            border-radius: 50%;
+            box-shadow: 0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1);
+            filter: blur(2.75rem) brightness(0.3) contrast(1) grayscale(0)
+              hue-rotate(0deg) invert(0) saturate(1) sepia(0)
+              drop-shadow(0rem 0.25rem 0.375rem rgba(0, 0, 0, 0.1));
+            z-index: 0;
+            left: 55vw;
+            top: 20vh;
+          "
+        ></div>
+        <div>
+          <h1
+            style="
+              margin-top: 5rem;
+              font-weight: 700;
+              font-size: 3rem;
+              line-height: 3.75rem;
+              font-family: HelveticaBold;
+              word-spacing: 0.25rem;
+              white-space: normal;
+              color: white;
+              text-align: left;
+            "
+          >
+            Neurodiversity at Work: 5 Best Practices, 1 Rebel Billionaire’s
+            Journey
+          </h1>
+        </div>
+        <p style="font-size: 1.25rem">
+          Corporate leaders are beginning to recognize that the world contains a
+          vast range of cognitive experiences—and that their organizations
+          should be built accordingly. Here’s how a growing number of
+          neurodivergent people and their allies are quietly revolutionizing the
+          workforce.
+        </p>
+
+        <img
+          src="./images/img.svg"
+          alt="img1"
+          style="
+            height: 21.5625rem;
+            width: auto;
+            margin-top: 3.75rem;
+            max-width: 100%;
+          "
+        />
+        <div>
+          <p style="margin: 3.75rem 0 1.875rem 0">
+            Forget paint-pounding giants and physical showdowns. Today's NBA is
+            a supersonic chess match, ruled by sharpshooters raining fire from
+            beyond the arc. The reign of the three-pointer has dethroned the
+            traditional big man, ushering in an era of lightning-fast guards and
+            laser-focused wings. This shift isn't just about style; it's a
+            data-driven revolution fueled by analytics. Think mountains of
+            stats, algorithms dissecting every possession, and coaches wielding
+            laptops like magic wands.
+          </p>
+          <p style="margin: 0 0 1.875rem 0">
+            But it's not just numbers dominating the game. Players themselves
+            have morphed into global superstars, leveraging social media to
+            bypass the media and connect directly with fans. This newfound power
+            has shifted the landscape, breeding an era of player freedom,
+            blockbuster trades, and free-agency fireworks.
+          </p>
+          <p style="margin: 0 0 1.875rem 0">
+            And don't get us started on technology. From real-time player
+            tracking to mind-bending VR experiences, fans are closer to the
+            action than ever before. This tech magic isn't just for spectators;
+            training facilities are now filled with cutting-edge tools, helping
+            athletes sculpt their bodies and brains into basketball-playing
+            cyborgs.
+          </p>
+          <p style="margin: 0 0 1.875rem 0">
+            So, where does this supersonic, stat-fueled, player-powered league
+            go from here? Buckle up, because the future promises even wilder
+            rides. Expect the pace to amp up, with teams prioritizing the
+            three-pointer's efficiency over bruising battles in the paint.
+            Analytics will become the game's sixth man, predicting plays before
+            they even unfold. The international talent pool will overflow,
+            enriching the league with diverse skillsets and perspectives. And
+            players? They'll hold the keys to the kingdom, shaping their own
+            destinies and potentially even influencing the rules of the game
+            itself.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
